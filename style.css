@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #020617;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #38bdf8;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+}
+
+/* Card */
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+    background: #020617;
+}
+
+/* Animation */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect */
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
